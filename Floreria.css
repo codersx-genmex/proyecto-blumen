@@ -44,7 +44,7 @@ body{
 }
 .burbuja:nth-child(1){
     width: 80px;
-    height: 20px;
+    height: 80px;
     left: 5%;
     animation-duration: 4s;
     animation-delay: 1s;
