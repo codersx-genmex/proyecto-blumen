@@ -1,4 +1,4 @@
-# Bienvenidos a Blumen
+# Bienvenidos a Blumen 🌸
 Blumen es una e-commerce de una florería donde podrás encontrar una amplia variedad de flores y arreglos florales para ocasiones especiales.
 
 ## Objetivos del proyecto
