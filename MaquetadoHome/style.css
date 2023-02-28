@@ -1,0 +1,19 @@
+.sakura{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.input-nw{
+    position: absolute;
+    z-index: 100;
+    transform: translate(50%,50%);
+}
+.input-nw > input{
+    border-radius: 20px;
+    border: none;
+}
+.input-nw > input:focus{
+    transform: scale(1.1);
+    outline: none;
+}
