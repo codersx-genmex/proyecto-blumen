@@ -1,19 +1,42 @@
-.sakura{
-    height: 150px;
+h3,p{
+    color: #fff;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.subscribe{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+.input-encima{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+.centrado{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+}
+.imagen{
+    height: 350px;
     width: 100%;
     object-fit: cover;
-    position: absolute;
+    filter: blur(2px);
+    filter: brightness(0.6);
 }
-.input-nw{
-    position: absolute;
-    z-index: 100;
-    transform: translate(50%,50%);
-}
-.input-nw > input{
-    border-radius: 20px;
+.nw-inpt{
+    border-radius: 5px;
     border: none;
 }
-.input-nw > input:focus{
-    transform: scale(1.1);
+.nw-inpt:focus{
     outline: none;
+}
+.boton-nw{
+    border-radius: 40px;
+    padding: 6px 10px;
 }
