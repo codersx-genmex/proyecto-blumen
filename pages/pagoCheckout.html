@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/pagoCheck.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                        <img src="../assets/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">Some news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!-- Header -->
+    <!-- OVERALL PAYMENT CARD -->
+    <div class="card">
+        <!-- METODO DE PAGO -->
+        <div class="card-body">
+            <div class="row upper">
+                <span><i class="fa fa-check-circle-o"></i> Cuenta </span>
+                <span><i class="fa fa-check-circle-o"></i> Envío </span>
+                <span id="payment"><span id="three">3</span>Pago</span>
+            </div>
+            <!-- DETAILS SHOP -->
+            <!-- PAYMENT CARD -->
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="left">
+                        <div class="row">
+                            <span class="header">Método de pago</span>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/color/48/000000/visa.png" />
+                                <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
+                                <img src="https://img.icons8.com/color/48/000000/maestro.png" />
+                            </div>
+                        </div>
+                        <form>
+                            <span class="spans">Nombre del propietario de la tarjeta:</span>
+                            <input placeholder="Scarlett Johansson">
+                            <span class="spans">Número de tarjeta:</span>
+                            <input placeholder="0125-6780-4567-9909">
+                            <div class="row">
+                                <div class="col-4"><span class="spans">Expiración:</span>
+                                    <input placeholder="03/24">
+                                </div>
+                                <div class="col-4"><span class="spans">CVC:</span>
+                                    <input id="cvc">
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <div class="cleft">Cancelar orden</div>
+                                <!--<div class="cright"><button id="pagar">Pagar</button></div>-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- PAYMENT CARD -->
+                <!-- ORDER SUMMARY -->
+                <div class="col-md-5">
+                    <div class="right">
+                        <div class="header">Resumen del pedido</div>
+                        <div class="row item">
+                            <div class="col-4 align-self-center"><img class="img-fluid"
+                                    src="../assets/dahiana-waszaj-JIWJOSQ-PnY-unsplash.jpg"></div>
+                            <div class="col-8">
+                                <div class="row text-muted">Ramo de San Valentín</div>
+                                <div class="row"><b>$ 745.00</b></div>
+                                <div class="row">Qty:1</div>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- APLICAR -->
+                        <div>Tarjeta de regalo / Código de descuento</div>
+                        <br>
+                        <div class="row lower">
+                            <div class="col text-left"><input id="inpu"></div>
+                            <div class="col text-right"><button id="apli">Aplicar</button></div>
+                        </div>
+
+                        <!-- APLICAR -->
+                        <div class="row lower">
+                            <div class="col text-left">Subtotal</div>
+                            <div class="col text-right">$ 745.00</div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left">IVA</div>
+                            <div class="col text-right">$5.45</div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left">Envío</div>
+                            <div class="col text-right" style="color: rgb(1, 211, 8);"><b>Gratis</b></div>
+                        </div>
+                        <div class="row lower">
+                            <div class="col text-left"><b>Total</b></div>
+                            <div class="col text-right"><b>$ 750.45</b></div>
+                        </div>
+                    </div>
+                    <!-- FINISH ORDER SUMMARY -->
+                </div>
+            </div>
+        </div>
+        <!-- METODO DE PAGO -->
+        <div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
