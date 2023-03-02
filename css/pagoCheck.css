@@ -1,5 +1,9 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
 .navbar{
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .card{
@@ -10,6 +14,7 @@
     border: none;
     padding-left: 25%;
     max-width: 1500px;
+    margin-top: 65px;
 }
 .card-top{
     padding: 0.7rem 5rem;
@@ -29,6 +34,7 @@
         padding: 0 1rem 1rem 1rem;
         background-size: cover;
         background-repeat: no-repeat;
+        
     }  
     .card-top{
         padding: 0.7rem 1rem;
@@ -37,10 +43,13 @@
 .row{
     margin: 0;
 }
+/*
 .upper{
     padding: 1rem 0;
-    justify-content: space-evenly;
-}
+    display: flex;
+    justify-content: space-between;   
+}*/ 
+
 #three{
     border-radius: 1rem;
         width: 22px;
@@ -55,7 +64,7 @@
     color: blue;
 }
 .icons{
-    margin-left: auto;
+    margin-left: -15px;
 }
 form span{
     color: rgb(179, 179, 179);
@@ -80,7 +89,9 @@ input:focus::-webkit-input-placeholder
 }
 .header{
     font-size: 1.5rem;
+    margin-left: -15px;
 }
+
 .left{
     background-color: #F8EDED;
     padding: 2vh;   
@@ -138,7 +149,7 @@ input[type=checkbox]{
     margin-bottom: unset;
 }
 #cvc{
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575) , rgba(255, 255, 255, 0.541)), url("https://img.icons8.com/material-outlined/24/000000/help.png");
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575) , rgba(255, 255, 255, 0.541));
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: center;
@@ -158,6 +169,7 @@ input[type=checkbox]{
 
 .spans{
     color:#718096;
+    font-size: 14px;
 }
 
 #inpu {
@@ -170,4 +182,99 @@ input[type=checkbox]{
     border: 1px solid rgba(0, 0, 0, 0);
     background-color: #3182CE;
     color: white;
+}
+
+.align-self-center {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+.form-control{
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    margin-left: -12px;
+}
+
+.buttonsPlus{
+    margin-left: -54px;
+    font-size: 15px;
+}
+
+.buttonMinus, .buttonMax {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    width: 22px;
+    background-color: #E2E8F0;
+}
+
+.buttonCancel {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-right: 100px;
+    font-size: 14px;
+}
+.buttonAceptar {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-left: 216px;
+    font-size: 14px;
+}
+
+.buttonRegistro {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-right: 100px;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 132px;
+}
+
+.alignOne {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/* BARRA DE PROGRESO*/
+.progress-bar {
+position: relative;
+width: 100%;
+height: 30px;
+background-color: white;
+border-radius: 15px;
+margin-bottom: 45px;
+}
+
+.progress {
+position: absolute;
+height: 100%;
+background-color: #007bff;
+border-radius: 15px;
+transition: width 0.3s ease-in-out;
+}
+
+.upper {
+display: flex; 
+justify-content: space-between;
+align-items: center;
+height: 100%;
+padding: 0 10px;
+background-color: white;
+font-size: 14px;
+}
+
+.upper span i {
+font-size: 20px;
+margin-right: 5px;
+color: #007bff;
+}
+
+.fa-lock{
+    font-size: 20px;
+    margin-left: 483px;
+    margin-top: -25px;
 }

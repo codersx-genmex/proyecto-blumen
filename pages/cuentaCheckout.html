@@ -104,50 +104,29 @@
                             <div class="progress-bar">
                                 <div class="progress"></div>
                                 <div class="upper">
-                                    <span><i class="fa fa-check-circle-o"></i> Cuenta</span>
+                                    <span id="payment"><i class="fa fa-check-circle-o"></i><span
+                                            id="three">1</span>Cuenta</span>
                                     <span><i class="fa fa-check-circle-o"></i> Envío</span>
-                                    <span id="payment"><span id="three">3</span>Pago</span>
+                                    <span>Pago</span>
                                 </div>
                             </div>
 
                             <!-- BARRA DE PROGRESO PAGO -->
                             <!-- FORM DETALLES DE PAGO-->
-                            <span class="header">Detalles de pago</span>
-                            <div class="icons">
-                                <img src="https://img.icons8.com/color/48/000000/visa.png" />
-                                <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
-                                <img src="https://img.icons8.com/color/48/000000/maestro.png" />
-                            </div>
+                            <span class="header"><b>Detalles de la cuenta</b></span>
                         </div>
                         <form>
-                            <span class="spans">Nombre del propietario de la tarjeta:</span>
-                            <input placeholder="Scarlett Johansson">
-                            <span class="spans">Número de tarjeta:</span>
-                            <input placeholder="0125-6780-4567-9909">
-                            <div class="row">
-                                <div class="col-4">
-                                    <span class="spans">Expiración de tarjeta:</span>
-                                    <div class="container">
-                                        <div class="form-group d-flex">
-                                            <input class="form-control mr-5" type="text" id="month" name="month"
-                                                placeholder="MM">
-                                            <span class="align-self-center">/</span>
-                                            <input class="form-control ml-1" type="text" id="year" name="year"
-                                                placeholder="AA">
-                                        </div>
-                                    </div>
-                                    <i class="fa fa-lock" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-4"><span class="spans">CVC: <i
-                                            class="far fa-question-circle"></i></span>
-                                    <input id="cvc">
-                                </div>
+                            <span class="spans"><b>Dirección de Correo
+                                    Electrónico:</b></span>
+                            <input style="margin-top: 15px;" placeholder="Email@myemail.com">
+                            <span class="spans"><b>Contraseña:</b></span>
+                            <input style="margin-top: 15px;" placeholder="*********">
+                            <div>
+                                <button class="buttonRegistro">Registrese para tener una cuenta</button>
                             </div>
                             <hr>
                             <div>
                                 <button class="buttonCancel">Cancelar orden</button>
-                                <!--<div class="cright"><button id="pagar">Pagar</button></div>-->
-                                <button class="buttonAceptar">Aceptar</button>
                             </div>
                         </form>
                     </div>
