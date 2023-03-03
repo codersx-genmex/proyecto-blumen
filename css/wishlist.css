@@ -13,6 +13,10 @@ button {
 }
 /* BOTON*/
 
+#photoWish{
+	justify-content: center;
+}
+
 .d-flex.justify-content-center button {
 	margin: 0 auto;
 	display: block;
@@ -45,3 +49,28 @@ button {
 	}
 
 	/* FOOTER */
+
+.wish-container {
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+.iteme2{
+    width: 100%;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    padding: 2vh 0;
+}
+
+.top {
+	display: flex;
+	padding: 0 60vh;
+	
+}
+
+.bottom {
+	display: flex;
+	padding: 0 60vh;
+}

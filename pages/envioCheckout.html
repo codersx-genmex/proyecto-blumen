@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PagoCheckout</title>
+    <title>EnvioCheckout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -105,46 +105,31 @@
                                 <div class="progress"></div>
                                 <div class="upper">
                                     <span><i class="fa fa-check-circle-o"></i> Cuenta</span>
-                                    <span><i class="fa fa-check-circle-o"></i> Envío</span>
-                                    <span id="payment"><span id="three">3</span>Pago</span>
+                                    <span id="payment"><span id="three">2</span>Envío</span>
+                                    <span><i class="fa fa-check-circle-o"></i> Pago</span>
                                 </div>
                             </div>
 
                             <!-- BARRA DE PROGRESO PAGO -->
                             <!-- FORM DETALLES DE PAGO-->
-                            <span class="header">Detalles de pago</span>
-                            <div class="icons">
-                                <img src="https://img.icons8.com/color/48/000000/visa.png" />
-                                <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
-                                <img src="https://img.icons8.com/color/48/000000/maestro.png" />
-                            </div>
+                            <span class="header">Detalles del Envío</span>
                         </div>
                         <form>
                             <div>
-                                <span class="spanDir">Usar tarjeta registrada:</span>
-                                <input class="inputDir" id="cvc" placeholder="Mastercard 234">
+                                <span class="spanDir">Usar dirección guardada:</span>
+                                <input class="inputDir" placeholder="Calle: Benito Juarez con esquina 21 de Marzo">
                             </div>
-                            <span class="spans">Nombre del propietario de la tarjeta:</span>
-                            <input id="inputNM" placeholder="Scarlett Johansson">
-                            <span class="spans">Número de tarjeta:</span>
-                            <input id="inputNM" placeholder="0125-6780-4567-9909">
+
+                            <span class="spans">Número interior o exterior del domicilio:</span>
+                            <input id="inputNM" placeholder="25">
+                            <span class="spans">Nombre de la calle:</span>
+                            <input id="inputNM" placeholder="Calle: Benito Juarez con esquina 21 de Marzo">
                             <div class="row">
-                                <div class="col-4">
-                                    <span class="spans">Expiración de tarjeta:</span>
-                                    <div class="container">
-                                        <div class="form-group d-flex">
-                                            <input class="form-control mr-5" type="text" id="month" name="month"
-                                                placeholder="MM">
-                                            <span class="align-self-center">/</span>
-                                            <input class="form-control ml-1" type="text" id="year" name="year"
-                                                placeholder="AA">
-                                        </div>
-                                    </div>
-                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                <div class="col-4"><span class="spans">Código postal:</span>
+                                    <input id="cvc" placeholder="52148">
                                 </div>
-                                <div class="col-4"><span class="spans">CVC: <i
-                                            class="far fa-question-circle"></i></span>
-                                    <input id="cvc">
+                                <div class="col-4"><span class="spans">Tipo de envío:</span>
+                                    <input id="cvc" placeholder="Envío gratis">
                                 </div>
                             </div>
                             <hr>

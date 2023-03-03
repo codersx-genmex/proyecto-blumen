@@ -154,9 +154,6 @@ input[type=checkbox]{
     background-position-x: 95%;
     background-position-y: center;
 } 
-#cvc:hover{
-
-}
 
 #apli{
     border-radius: 10px;
@@ -174,6 +171,11 @@ input[type=checkbox]{
 
 #inpu {
     background-color: #E2E8F0;
+}
+
+#inputNM {
+    width: 468px;
+    margin-right: 25px;
 }
 
 #pagar{
@@ -275,6 +277,25 @@ color: #007bff;
 
 .fa-lock{
     font-size: 20px;
-    margin-left: 483px;
+    margin-left: 474px;
     margin-top: -25px;
+}
+
+.spanDir {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: black;
+}
+
+.inputDir{
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    font-size: 14px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 208px;
+    margin-left: 40px;
 }
