@@ -71,12 +71,10 @@ body {
 }
 form span{
     color: rgb(179, 179, 179);
-    border-radius: 10px;
 }
 form{
     padding: 2vh 0;
     color: black;
-    
 }
 input{
     border: 1px solid rgba(0, 0, 0, 0);
@@ -98,6 +96,7 @@ input:focus::-webkit-input-placeholder
 
 .left{
     background-color: #F8EDED;
+    border-radius: 5px;
     padding: 2vh;   
 }
 .left img{
@@ -243,7 +242,9 @@ input[type=checkbox]{
     margin-right: 10px;
 }
 
-
+img {
+    border-radius: 5px;
+}
 
 /* BARRA DE PROGRESO*/
 .progress-bar {
@@ -262,6 +263,7 @@ background-color: #007bff;
 border-radius: 15px;
 transition: width 0.3s ease-in-out;
 }
+/* BARRA DE PROGRESO*/
 
 .upper {
 display: flex; 
@@ -285,6 +287,7 @@ color: #007bff;
     margin-top: -25px;
 }
 
+/*Usar direccion guardada*/
 .spanDir {
     border: 1px solid rgba(0, 0, 0, 0);
     background-color: transparent;
@@ -300,6 +303,6 @@ color: #007bff;
     font-size: 14px;
     background-color: white;
     margin-bottom: 20px;
-    width: 208px;
-    margin-left: 40px;
+    width: 268px;
 }
+/*Usar direccion guardada*/
