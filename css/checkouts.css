@@ -15,6 +15,7 @@ body {
     padding-left: 25%;
     max-width: 1500px;
     margin-top: 65px;
+    
 }
 .card-top{
     padding: 0.7rem 5rem;
@@ -35,6 +36,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         
+        
     }  
     .card-top{
         padding: 0.7rem 1rem;
@@ -42,6 +44,7 @@ body {
 }
 .row{
     margin: 0;
+    
 }
 /*
 .upper{
@@ -68,6 +71,7 @@ body {
 }
 form span{
     color: rgb(179, 179, 179);
+    border-radius: 10px;
 }
 form{
     padding: 2vh 0;
