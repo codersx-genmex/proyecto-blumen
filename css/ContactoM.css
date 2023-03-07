@@ -1,0 +1,87 @@
+/* Newsletter */
+
+h3 {
+    color: #fff;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.input-encima {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+.centrado {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+}
+
+.imagen {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    filter: brightness(0.6);
+}
+
+.nw-inpt {
+    border-radius: 5px;
+    border: none;
+}
+
+.nw-inpt:focus {
+    outline: none;
+}
+
+.boton-nw {
+    border-radius: 40px;
+    padding: 6px 10px;
+}
+
+/*Contacto things*/
+
+#miBoton {
+	padding: 15px 30px;
+	border-radius: 15px;
+	border: none;
+	background-color: #ffb7ac;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: white;
+    margin-left: 35px;
+}
+
+#informacion {
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: -300px; /*Era 30*/
+    margin-right: 1875px;
+    background-color: #ffb7ac;
+    max-width: 20%;
+
+  }
+  
+  #contacto{
+    margin-left: 35px;
+  }
+
+  #mapsimg{
+    margin-left: 150px;
+    max-width: 20%
+  }
+ 
+
+
