@@ -1,0 +1,147 @@
+h3,
+p {
+	color: #000000;
+}
+.contenedor {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.subscribe {
+	position: absolute;
+	top: 35%;
+	left: 25%;
+}
+.input-encima {
+	position: absolute;
+	top: 35%;
+	left: 60%;
+}
+.centrado {
+	position: absolute;
+	top: 55%;
+	left: 60%;
+}
+.imagen {
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+	filter: blur(2px);
+	filter: brightness(0.6);
+}
+.nw-inpt {
+	border-radius: 5px;
+	border: none;
+}
+.nw-inpt:focus {
+	outline: none;
+}
+.boton-nw {
+	border-radius: 40px;
+	padding: 6px 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.Imagenes {
+	padding-top: 3%;
+	padding-left: 5%;
+	padding-bottom: 15%;
+}
+
+h5 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 17px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* FOOTER */
+.bg {
+	background-color: #F8E8E6;
+}
+
+hr {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 2%;
+}
+
+.text-left {
+	float: left;
+
+}
+
+.text-right {
+	float: right;
+}
+
+/* FOOTER */
+
+/* Newsletter */
+
+h3 {
+	color: #fff;
+}
+
+.contenedor {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.subscribe {
+	position: absolute;
+	top: 35%;
+	left: 25%;
+}
+
+.input-encima {
+	position: absolute;
+	top: 35%;
+	left: 60%;
+}
+
+.centrado {
+	position: absolute;
+	top: 55%;
+	left: 60%;
+}
+
+.imagen {
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+	filter: blur(2px);
+	filter: brightness(0.6);
+}
+
+.nw-inpt {
+	border-radius: 5px;
+	border: none;
+}
+
+.nw-inpt:focus {
+	outline: none;
+}
+
+.boton-nw {
+	border-radius: 40px;
+	padding: 6px 10px;
+}
+
+/* Newsletter */

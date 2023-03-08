@@ -1,0 +1,134 @@
+/* Newsletter */
+
+h3 {
+    color: #fff;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.input-encima {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+.centrado {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+}
+
+.imagen {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    filter: brightness(0.6);
+}
+
+.nw-inpt {
+    border-radius: 5px;
+    border: none;
+}
+
+.nw-inpt:focus {
+    outline: none;
+}
+
+.boton-nw {
+    border-radius: 40px;
+    padding: 6px 10px;
+}
+
+/* Botón */
+button {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffb7ac;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+/* Footer */
+
+.bg {
+    background-color: #F8E8E6;
+}
+
+hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2%;
+}
+
+.text-left {
+    float: left;
+
+}
+
+.text-right {
+    float: right;
+}
+
+/*Container2 Center*/
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 2000px;
+    background-color: antiquewhite;
+    /* full viewport height */
+}
+
+
+/* FILTROS LEFT*/
+.left{
+    display:inline-block;
+    height: 1120px;
+    width: 400px;
+    margin: 10px;
+    background-color: tomato;
+    margin-top: -600px;
+    }
+
+
+/*MENU IMGS RIGHT*/
+.right {
+    display: inline-block;
+    height: 1120px;
+    width: 800px;
+    margin: 10px;
+    background-color: palegreen;
+    margin-top: -600px;
+}
+
+/* IMAG*/
+
+.Imag{
+background-color: black;
+display: inline-block;
+height:340px;
+width: 280px;
+margin-left: 80px;
+}

@@ -1,0 +1,72 @@
+h3,
+p {
+    color: #000000;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.input-encima {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+.centrado {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+}
+
+.imagen {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    filter: brightness(0.6);
+}
+
+.nw-inpt {
+    border-radius: 5px;
+    border: none;
+}
+
+.nw-inpt:focus {
+    outline: none;
+}
+
+.boton-nw {
+    border-radius: 40px;
+    padding: 6px 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(255, 244, 250);
+}
+
+#Tarjetas {
+    padding-left: 5%;
+}
+
+.Icon {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #ff9989;
+}

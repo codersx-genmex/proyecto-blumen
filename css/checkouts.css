@@ -96,7 +96,7 @@ input:focus::-webkit-input-placeholder
 
 .left{
     background-color: #F8EDED;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 2vh;   
 }
 .left img{
