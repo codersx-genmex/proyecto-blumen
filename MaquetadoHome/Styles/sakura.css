@@ -1,0 +1,34 @@
+.sakura{
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/sakura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1.2);
+    align-items: center;
+    justify-content: center;
+}
+.hprom{
+    margin-right: 10px;
+    width: 50%;
+    color: #fff;
+}
+.inpprom{
+    margin-left: 10px;
+}
+.inpprom input{
+    border: none;
+}
+.inpprom input:focus{
+    border: none;
+    outline: none;
+}
+.inpprom button{
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #FFDCDC;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 60%;
+}
