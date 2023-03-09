@@ -44,19 +44,13 @@ h3,p{
 h1{
     text-align: center;
 }
+#Boton{
+    border-radius: 10px;
+    background-color: #ffb6d4;
+    color: rgb(0, 0, 0);
+    height: 30px;   
+    width: 150px;
+}
 
-body{
-    background-color: rgb(255, 244, 250);
-}
-#Tarjetas{
-    padding-left: 5%;
-}
-.Icon{
-    padding: 15px 30px;
-	border-radius: 15px;
-	border: none;
-	background-color: #ffb7ac;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	color: #ff9989;   
-}
+
+
