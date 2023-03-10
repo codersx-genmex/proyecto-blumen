@@ -1,6 +1,11 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+.bg-w {
+	background-color: white;
+}
+
 /* BOTON*/
 button {
 	padding: 15px 30px;

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link type="image/png" rel="icon" href="../img/cherry-blossom.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
@@ -11,14 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/Blog.css">
+    <link rel="stylesheet" href="../css/s-blog.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-w fixed-top">
             <!-- Container wrapper -->
             <div class="container-fluid">
                 <!-- Toggle button -->
@@ -111,7 +115,7 @@
                         height="260px" width="460px" class="rounded">
                 </div>
                 <div class="col-lg-3 mt-5">
-                    <h2>¿Cómo saber qué arreglo de flores regalar?</h2>
+                    <h2 class="fw-bold">¿Cómo saber qué arreglo de flores regalar?</h2>
                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa labore animi minus
                         voluptatibus
                         accusamus eos, sint assumenda sapiente exercitationem quas. Nisi maxime deleniti delectus
@@ -126,7 +130,7 @@
                     https://images.unsplash.com/photo-1503460589709-a01a75418735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80"
                         alt="" height="260px" width="460px" class="rounded"></div>
                 <div class="col-lg-3 mt-5">
-                    <h2>5 consejos para destacar tu habitación con flores</h2>
+                    <h2 class="fw-bold">5 consejos para destacar tu habitación con flores</h2>
                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsa labore animi minus
                         voluptatibus
                         accusamus eos, sint assumenda sapiente exercitationem quas. Nisi maxime deleniti delectus
@@ -138,23 +142,26 @@
         </div>
         <!-- Termina contenido -->
 
-        <!-- Newsletter -->
-        <section class="contenedor-nw">
-            <div class="contenedor">
-                <img src="../assets/NewSlayer.jpg" class="imagen" />
-                <div class="subscribe">
-                    <h3>Sub sub subscribete y dale a like si quieres</h3>
-                    <p>Holi como tas compra todo po favor ayuda a la economia local</p>
-                </div>
-                <div class="input-encima">
-                    <input type="text" class="nw-inpt">
-                </div>
-                <div class="centrado">
-                    <button class="boton-nw">Piquele aqui po fa vo</button>
+        <!-- NEWSLETTER OFICIAL -->
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <div class="img-fluid text-center p-5 sakura d-flex">
+                        <div class="hprom">
+                            <h3>SUSCRIBETE</h3>
+                            <p>Lee nuestras historias y recibe un cupón de 10% en tu próxima compra, así como las
+                                últimas
+                                novedades de nuestro catálogo.</p>
+                        </div>
+                        <div class="inpprom d-flex flex-column">
+                            <input type="text" placeholder="Correo electrónico">
+                            <button>Aqui</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- Newsletter -->
+        </div>
+        <!-- NEWSLETTER OFICIAL -->
         <!-- Footer -->
         <footer class="bg text-center text-lg-start text-muted">
             <!--Quitamos primero propiedad bg-light y utilizamos inline-style style="background-color: #F8E8E6;"-->

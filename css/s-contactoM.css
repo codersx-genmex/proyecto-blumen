@@ -1,57 +1,8 @@
-/* Newsletter */
-
-h3 {
-    color: #fff;
-}
-
-.contenedor {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-.subscribe {
-    position: absolute;
-    top: 35%;
-    left: 25%;
-}
-
-.input-encima {
-    position: absolute;
-    top: 35%;
-    left: 60%;
-}
-
-.centrado {
-    position: absolute;
-    top: 55%;
-    left: 60%;
-}
-
-.imagen {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    filter: blur(2px);
-    filter: brightness(0.6);
-}
-
-.nw-inpt {
-    border-radius: 5px;
-    border: none;
-}
-
-.nw-inpt:focus {
-    outline: none;
-}
-
-.boton-nw {
-    border-radius: 40px;
-    padding: 6px 10px;
-}
-
 /*Contacto things*/
+
+.bg-w{
+    background-color: white;
+}
 
 #miBoton {
     padding: 15px 30px;
@@ -70,8 +21,6 @@ h3 {
     margin-top: 30px;
     /*Era 30*/
     background-color: #ffb7ac;
-
-
 }
 
 #contacto {
@@ -127,14 +76,58 @@ h3 {
 
 body {
     overflow-x: hidden;
+    font-family: 'Montserrat';
 }
 
 html {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+/*Contacto things*/
+/* SAKURA NEWSLETTER */
+.sakura {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/sakura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1.2);
+    align-items: center;
+    justify-content: center;
+}
 
-/* FOOTER */
+.hprom {
+    margin-right: 10px;
+    width: 50%;
+    color: #fff;
+}
+
+.inpprom {
+    margin-left: 10px;
+}
+
+.inpprom input {
+    border: none;
+}
+
+.inpprom input:focus {
+    border: none;
+    outline: none;
+}
+
+.inpprom button {
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #FFDCDC;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 60%;
+}
+
+/* SAKURA NEWSLETTER */
+/* FOOTERS */
+
 .bg {
     background-color: #F8E8E6;
 }
@@ -148,7 +141,7 @@ hr {
 .container {
     width: 100%;
     overflow: hidden;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%;*/
 }
 
 .text-left {
@@ -160,4 +153,4 @@ hr {
     float: right;
 }
 
-/* FOOTER */
+/* FOOTERS */
