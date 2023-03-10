@@ -154,8 +154,8 @@
 .form-control small {
     color: #e74c3c;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10;
+    left: 6;
     visibility: hidden;
 }
 

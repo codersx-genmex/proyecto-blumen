@@ -51,39 +51,88 @@ h3 {
     padding: 6px 10px;
 }
 
-/* Newsletter */
-
 /*Contacto things*/
 
 #miBoton {
-	padding: 15px 30px;
-	border-radius: 15px;
-	border: none;
-	background-color: #ffb7ac;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	color: white;
-    margin-left: 35px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffb7ac;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin-left: 5px;
 }
 
 #informacion {
     padding: 20px;
     border-radius: 15px;
-    margin-top: -300px; /*Era 30*/
-    margin-right: 1875px;
+    margin-top: 30px;
+    /*Era 30*/
     background-color: #ffb7ac;
-    max-width: 20%;
 
-  }
-  
-  #contacto{
+
+}
+
+#contacto {
     margin-left: 35px;
-  }
+}
 
-  #mapsimg{
+#mapsimg {
     margin-left: 150px;
     max-width: 20%
-  }
+}
+
+
+/* Para pantallas más grandes que 768px */
+@media (min-width: 768px) {
+    #informacion {
+        max-width: 40%;
+        margin-left: 15px;
+        /* se ajustará automáticamente al ancho del contenedor */
+    }
+}
+
+/* Para pantallas más pequeñas que 768px */
+@media (max-width: 767px) {
+    #informacion {
+        max-width: 80%;
+        margin-right: auto;
+        /* se ajustará automáticamente al ancho del contenedor */
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #contacto {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contacto form input,
+    #contacto form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #mapsUbicacion {
+        max-width: 80%;
+        margin-right: auto;
+        /* se ajustará automáticamente al ancho del contenedor */
+        margin-left: auto;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
 /* FOOTER */
 .bg {

@@ -20,7 +20,7 @@ btnContadorResta.addEventListener("click", () => {
 } );
 // TERMINA FUNCION BOTON CONTADOR
 
-//INICA FUNCIONES A FORM CUENTA
+//INICIA FUNCIONES A FORM CUENTA
 const form = document.getElementById( 'form' );
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -41,29 +41,29 @@ function checkInputs() {
 	const password2Value = password2.value.trim();
 	
 	if(usernameValue === '') {
-		setErrorFor(username, 'Username cannot be blank');
+		setErrorFor(username, 'Introduzca un usuario');
 	} else {
 		setSuccessFor(username);
 	}
 	
 	if(emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank');
+		setErrorFor(email, 'Introduzca un correo');
 	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Not a valid email');
+		setErrorFor(email, 'El correo no es válido');
 	} else {
 		setSuccessFor(email);
 	}
 	
 	if(passwordValue === '') {
-		setErrorFor(password, 'Password cannot be blank');
+		setErrorFor(password, 'Introduzca una contraseña');
 	} else {
 		setSuccessFor(password);
 	}
 	
 	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 cannot be blank');
+		setErrorFor(password2, 'Introduzca contraseña de nuevo');
 	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords does not match');
+		setErrorFor(password2, 'Las contraseñas no coinciden');
 	} else{
 		setSuccessFor(password2);
 	}
