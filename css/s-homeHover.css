@@ -1,0 +1,198 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.bg-w{
+    background-color: white;
+}
+/* CONTAINER */
+.containerr {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+    filter: opacity(0.5);
+}
+
+.containerr:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* CONTAINER */
+/* MEDIAS */
+.roulette {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.roulette img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+    border-radius: 20px;
+}
+
+.roulette img:hover {
+    cursor: pointer;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.carousel-item img {
+    height: 800px;
+}
+
+.choco {
+    width: 75%;
+}
+
+.ellos {
+    width: 100%;
+}
+
+@media screen and (max-width: 820px) and (min-width: 450px) {
+    .carousel-item img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 449px) and (min-width: 200px) {
+
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .roulette img:hover {
+        cursor: pointer;
+        width: 70px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+
+    .choco {
+        width: 40%;
+    }
+
+    .ellos {
+        width: 50%;
+    }
+
+    .hprom {
+        font-size: 5px;
+        width: 30%;
+
+    }
+
+    .hprom p {
+        display: none;
+    }
+
+    .inpprom {
+        transform: scale(0.8);
+    }
+}
+/* MEDIAS */
+/* SAKURA NEWSLETTER */
+.sakura {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/sakura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1.2);
+    align-items: center;
+    justify-content: center;
+}
+
+.hprom {
+    margin-right: 10px;
+    width: 50%;
+    color: #fff;
+}
+
+.inpprom {
+    margin-left: 10px;
+}
+
+.inpprom input {
+    border: none;
+}
+
+.inpprom input:focus {
+    border: none;
+    outline: none;
+}
+
+.inpprom button {
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #FFDCDC;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 60%;
+}
+/* SAKURA NEWSLETTER */
+/* FOOTERS */
+
+.bg {
+    background-color: #F8E8E6;
+}
+
+hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    /* padding-bottom: 2%; */
+}
+
+.text-left {
+    float: left;
+
+}
+
+.text-right {
+    float: right;
+}
+/* FOOTERS */
