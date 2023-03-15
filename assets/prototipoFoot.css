@@ -1,12 +1,9 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-/*Color de fondo*/
+/* FOOTERS */
+
 .bg {
     background-color: #F8E8E6;
 }
 
-/*Footer*/
 hr {
     width: 90%;
     margin-left: auto;
@@ -27,3 +24,5 @@ hr {
 .text-right {
     float: right;
 }
+
+/* FOOTERS */

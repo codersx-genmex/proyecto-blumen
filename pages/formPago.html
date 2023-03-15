@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link type="image/png" rel="icon" href="../img/cherry-blossom.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>envioValid</title>
+    <title>pagoValid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -21,7 +22,7 @@
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-w fixed-top">
             <!-- Container wrapper -->
             <div class="container-fluid">
                 <!-- Toggle button -->
@@ -35,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                        <img src="../assets/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
+                        <img src="../img/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
                     </a>
                     <!-- Left links -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
@@ -90,7 +91,7 @@
         <!-- Navbar -->
     </header>
     <!-- Header -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="conteiner">
         <div class="col-md-6">
             <!-- INICIA FORM VALIDATION-->
             <div class="container d-flex flex-column mt-2">
@@ -99,49 +100,47 @@
                     <div class="progress"></div>
                     <div class="upper">
                         <span><i class="fa fa-check-circle-o"></i> Cuenta</span>
-                        <span id="payment"><span id="three">2</span>Envío</span>
-                        <span><i class="fa fa-check-circle-o"></i> Pago</span>
+                        <span><i class="fa fa-check-circle-o"></i> Envío</span>
+                        <span id="payment"><span id="three">3</span>Pago</span>
+
 
                     </div>
                 </div>
                 <!-- BARRA DE PROGRESO PAGO -->
-                <!-- FORM DETALLES -->
-                <span class="header">Detalles del envío</span>
-                <!-- FORM DETALLES-->
+                <!-- FORM DETALLES DE PAGO-->
+                <span class="header">Detalles de pago</span>
+                <div>
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="visa1" />
+                    <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" alt="visa2" />
+                    <img src="https://img.icons8.com/color/48/000000/maestro.png" alt="visa3" />
+                </div>
+                <!-- FORM DETALLES DE PAGO-->
                 <!-- INICIA FORM -->
                 <form id="form" class="form">
                     <div class="form-control">
-                        <label for="username">Usar dirección guardada</label>
-                        <input type="text" placeholder="Calle: Benito Juarez con esquina 21 de marzo" id="username"
-                            id="username" />
+                        <label for="namePago">Propietario de la tarjeta</label>
+                        <input type="text" placeholder="Margot Robbie" id="namePago" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Numero interior o exterior de domicilio</label>
-                        <input type="number" placeholder="25" id="email" />
+                        <label for="cardNum">Número de tarjeta</label>
+                        <input type="text" placeholder="1234-4567-8912-3456" id="cardNum" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Nombre de la calle </label>
-                        <input type="text" placeholder="Calle: Benito Juarez con esquina 21 de marzo" id="username" />
+                        <label for="dateExp">Expiración</label>
+                        <input type="text" placeholder="05/03" id="dateExp" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Código postal</label>
-                        <input type="number" placeholder="97302" id="email" />
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="username">Seleccionar tipo de envío</label>
-                        <input type="number" placeholder="Envío gratis" id="email" />
+                        <label for="cvc">CVC</label><i class="far fa-question-circle"></i>
+                        <input type="password" placeholder="***" id="cvc" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -159,7 +158,7 @@
             <div class=" d-flex flex-column mt-4" id="container2">
                 <!--RESUMEN PRODUCTO BOTON CONTADOR-->
                 <span class="header mt-4">Resumen del pedido</span>
-                <img src="../assets/na-visky-7Z6GDHwQCEg-unsplash.jpg" alt="navisky-unsplash" id="imgFlower">
+                <img src="../img/na-visky-7Z6GDHwQCEg-unsplash.jpg" alt="navisky-unsplash" id="imgFlower">
                 <div class="row mt-2 justify-content-center">
                     <div class="col-6 mt-2">
                         <div>Ramo de San Valentín</div>
@@ -175,7 +174,7 @@
                 </div>
                 <!--RESUMEN PRODUCTO BOTON CONTADOR-->
                 <!-- APLICAR -->
-                <div class="mt-4">Tarjeta de regalo / Código de descuento</div>
+                <div class="mt-2">Tarjeta de regalo / Código de descuento</div>
                 <div class="row">
                     <div class="col-6">
                         <input id="discountInput" placeholder="BWMQTR987">
@@ -204,7 +203,6 @@
                         <div class="col text-right" id="bold">$ 750.45</div>
                     </div>
                 </div>
-
                 <!-- ROWS -->
             </div>
         </div>
@@ -216,6 +214,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-<script src="../js/formValid.js"></script>
+<script src="../js/formValidPago.js"></script>
 
 </html>

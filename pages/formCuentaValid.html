@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link type="image/png" rel="icon" href="../img/cherry-blossom.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cuentaValid</title>
@@ -21,7 +22,7 @@
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-w fixed-top">
             <!-- Container wrapper -->
             <div class="container-fluid">
                 <!-- Toggle button -->
@@ -35,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                        <img src="../assets/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
+                        <img src="../img/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
                     </a>
                     <!-- Left links -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
@@ -90,7 +91,7 @@
         <!-- Navbar -->
     </header>
     <!-- Header -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="conteiner">
         <div class="col-md-6">
             <!-- INICIA FORM VALIDATION-->
             <div class="container d-flex flex-column mt-2">
@@ -112,28 +113,28 @@
                 <form id="form" class="form">
                     <div class="form-control">
                         <label for="username">Nombre de usuario </label>
-                        <input type="text" placeholder="ingrid97" id="username" />
+                        <input type="text" placeholder="usuario09" id="username" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Email</label>
+                        <label for="username">Correo</label>
                         <input type="email" placeholder="a@blumen.com" id="email" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Password</label>
-                        <input type="password" placeholder="Password" id="password" />
+                        <label for="username">Contraseña</label>
+                        <input type="password" placeholder="Contraseña" id="password" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Password check</label>
-                        <input type="password" placeholder="********" id="password2" />
+                        <label for="username">Repetir contraseña</label>
+                        <input type="password" placeholder="Contraseña" id="password2" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -151,7 +152,7 @@
             <div class=" d-flex flex-column mt-4" id="container2">
                 <!--RESUMEN PRODUCTO BOTON CONTADOR-->
                 <span class="header mt-4">Resumen del pedido</span>
-                <img src="../assets/na-visky-7Z6GDHwQCEg-unsplash.jpg" alt="navisky-unsplash" id="imgFlower">
+                <img src="../img/na-visky-7Z6GDHwQCEg-unsplash.jpg" alt="navisky-unsplash" id="imgFlower">
                 <div class="row mt-2 justify-content-center">
                     <div class="col-6 mt-2">
                         <div>Ramo de San Valentín</div>

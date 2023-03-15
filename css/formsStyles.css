@@ -1,3 +1,15 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.bg-w{
+    background-color: white;
+}
+
+#conteiner{
+    margin-top: 85px;
+}
+
 /* CONTENEDOR ROSA */
 .container {
     font-family: 'Montserrat';
