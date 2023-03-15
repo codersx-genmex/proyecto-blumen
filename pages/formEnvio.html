@@ -6,7 +6,7 @@
     <link type="image/png" rel="icon" href="../img/cherry-blossom.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cuentaValid</title>
+    <title>envioValid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -99,42 +99,35 @@
                 <div class="progress-bar mt-4">
                     <div class="progress"></div>
                     <div class="upper">
-                        <span id="payment"><span id="three">1</span>Cuenta</span>
-                        <span><i class="fa fa-check-circle-o"></i> Envío</span>
+                        <span><i class="fa fa-check-circle-o"></i> Cuenta</span>
+                        <span id="payment"><span id="three">2</span>Envío</span>
                         <span><i class="fa fa-check-circle-o"></i> Pago</span>
 
                     </div>
                 </div>
                 <!-- BARRA DE PROGRESO PAGO -->
                 <!-- FORM DETALLES -->
-                <span class="header">Detalles de cuenta</span>
+                <span class="header">Detalles de envío</span>
                 <!-- FORM DETALLES-->
                 <!-- INICIA FORM -->
                 <form id="form" class="form">
                     <div class="form-control">
-                        <label for="username">Nombre de usuario </label>
-                        <input type="text" placeholder="usuario09" id="username" />
+                        <label for="direccionNum">Numero interior o exterior del domicilio </label>
+                        <input type="text" placeholder="25" id="direccionNum" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Correo</label>
-                        <input type="email" placeholder="a@blumen.com" id="email" />
+                        <label for="streetName">Nombre de la calle</label>
+                        <input type="text" placeholder="Calle: Benito Juarez con esquina 21 de Marzo" id="streetName" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
-                        <label for="username">Contraseña</label>
-                        <input type="password" placeholder="Contraseña" id="password" />
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="username">Repetir contraseña</label>
-                        <input type="password" placeholder="Contraseña" id="password2" />
+                        <label for="cp">Código postal</label>
+                        <input type="text" placeholder="52148" id="cp" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
@@ -208,6 +201,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-<script src="../js/formValid.js"></script>
+<script src="../js/formValidEnvio.js"></script>
 
 </html>
