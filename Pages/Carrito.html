@@ -105,128 +105,109 @@
     <!-- cuerpo -->
     <h1>Carrito</h1>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Producto</th>
-          <th scope="col">Precio</th>
-          <th scope="col">Cantidad</th>
-          <th scope="col">Subtotal</th>
-        </tr>
-      </thead>
-    </table>
-    <img style="width: 10%; float: left; border-radius: 10%;"
-      src="https://us.123rf.com/450wm/zoomtravels/zoomtravels1509/zoomtravels150901119/45290669-flores-amarillas-y-naranjas-de-rudbeckia-cappuccino.jpg?ver=6"
-      alt="">
-      <div>
+    <!-- Tabla -->
+    <div>
+      <table id="Tabla" class="table ">
         <thead>
           <tr>
-            <th>Ramo san valentin</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Subtotal</th>
+          </tr>
+        </thead>
+
+
+        <thead>
+          <tr><br>
+            <th><img style="width: 8%; border-radius: 10%;"
+                src="https://us.123rf.com/450wm/zoomtravels/zoomtravels1509/zoomtravels150901119/45290669-flores-amarillas-y-naranjas-de-rudbeckia-cappuccino.jpg?ver=6"
+                alt="">Ramo san valentin</th>
             <th>$900</th>
-            <th>1</th>
+            <th>#1</th>
             <th>$900</th>
           </tr>
         </thead>
+      </table>
+    </div>
+    <br><br>
+
+    <!-- Grid -->
+    <div style="background-color: rgb(255, 218, 244);">
+      <div class="container text-center">
+        <h4>Resumen de compra</h4><br>
       </div>
-      <br><br><br><hr>
-
-      <h6>Seguir comprando ...</h6><br>
-
-    <div style="background-color: rgb(255, 234, 246);padding-left: 70%;">
-      <div>
-
-        <div class="col-md-11">
-          <div class="border-5">
-            <div class="row">
-              <span style="text-align: center;">Resumen de compra</span>
-            </div>
-            <form>
-              <div class="row">
-                <div class="col-7"><span>Subtotal</span>
-                </div>
-                <div class="col-4"><span>$900</span>
-                </div>
-                <div class="row">
-                  <div class="col-7"><span>Envio</span>
-
-                  </div>
-                  <div class="col-4"><span>Gratis</span>
-                  </div>
-                  <div class="row">
-                    <div class="col-8"><span>Total</span>
-
-                    </div>
-                    <div class="col-4"><span>$900</span>
-                    </div>
-                    <button class="" id="Boton">Realizar pago</button>
-                  </div>
-            </form>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h6>Subtotal</h6><br>
+            <h6>Envio</h6><br>
+            <h6>TOTAL</h6><br>
+          </div>
+          <div class="col">
+            <h6>$900</h6><br>
+            <h6>Gratis</h6><br>
+            <h6>$900</h6><br>
+            <button id="Boton">Realizar pago</button>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
+
+
+    <br>
+    <h6 style="padding-left: 2%;">Seguir comprando ...</h6><br>
+
+
     <h1 style="text-align: left; padding-left: 5%;">Productos Similares</h1><br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div style="padding-left: 1%;">
-        <div class="card text-bg-secondary">
-          <img
-            src="https://agronews.com.bo/images/2022/20220921-flores_del_ecuador_se_importan_para_dias_especilaes-blogdelflorista.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-img-overlay">
-            <h5 style="text-align: left; padding-top: 30%;">Agradecimientos</h5>
-            <h5 style="text-align: left;">$800.00 MXN</h5>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-                  height="40" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z" />
-                </svg></button>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              </div>
-            </div>
-          </div>
+    <!-- Cartas 1-->
+    <div class="card-group text-bg-secondary">
+      <div class="card">
+        <img
+          src="https://agronews.com.bo/images/2022/20220921-flores_del_ecuador_se_importan_para_dias_especilaes-blogdelflorista.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 style="text-align: center;">Agradecimientos</h5>
+          <h5 style="text-align: center;">$800.00 MXN</h5>
         </div>
+        <button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+            height="40" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z" />
+          </svg></button>
       </div>
-      <div style="padding-left: 1%;">
-        <div class="card text-bg-secondary">
-          <img src="https://www.perspectiva.gt/wp-content/uploads/2023/02/flores01-min.jpeg" class="card-img-top"
-            alt="...">
-          <div class="card-img-overlay">
-            <h5 style="text-align: left; padding-top: 30%;">Graduacion</h5>
-            <h5 style="text-align: left;">$650.00 MXN</h5>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-                  height="40" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z" />
-                </svg></button>
-            </div>
-          </div>
+      <!-- Cartas 2-->
+      <div style="padding-left: 10px;" class="card">
+        <img src="https://www.perspectiva.gt/wp-content/uploads/2023/02/flores01-min.jpeg" class="card-img-top"
+          alt="...">
+        <div class="card-img-overlay">
+          <h5 style="text-align: center;">Graduacion</h5>
+          <h5 style="text-align: center;">$650.00 MXN</h5>
         </div>
+        <button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+            height="40" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z" />
+          </svg></button>
       </div>
-      <div style="padding-left: 1%;">
-        <div class="card text-bg-secondary">
-          <img
-            src="https://images.unsplash.com/photo-1589217215218-31f73736b66a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&w=1000&q=80"
-            class="card-img-top" alt="...">
-          <div class="card-img-overlay">
-            <h5 style="text-align: left; padding-top: 30%;">Aniversario</h5>
-            <h5 style="text-align: left;">$700.00 MXN</h5>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-                  height="40" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z" />
-                </svg></button>
-            </div>
-          </div>
+      <!-- Cartas 3-->
+      <div style="padding-left: 10px;" class="card">
+        <img
+          src="https://images.unsplash.com/photo-1589217215218-31f73736b66a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&w=1000&q=80"
+          class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 style="text-align: center;">Aniversario</h5>
+          <h5 style="text-align: center;">$700.00 MXN</h5>
         </div>
+        <button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+            height="40" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354l-1.5 1.5ZM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A23.825 23.825 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a8.827 8.827 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3Z" />
+          </svg></button>
       </div>
-    </div><br><br><br>
+    </div><br>
 
-    <!-- Fin cuerpo -->
+    <!-- parte del fotter -->
 
     <section class="contenedor-nw">
       <div class="contenedor">
