@@ -1,12 +1,16 @@
-body{
+body {
     font-family: 'Montserrat';
 }
 
-.bg-w{
+.bg-w {
     background-color: white;
 }
 
-#conteiner{
+.col-md-4 {
+    margin-left: 85px;
+}
+
+#conteiner {
     margin-top: 85px;
 }
 
@@ -21,11 +25,12 @@ body{
     width: 80%;
     height: 100%;
 }
+
 /* CONTENEDOR ROSA */
 
 /* CONTENEDOR GRIS */
 
-#container2{
+#container2 {
     font-family: 'Montserrat';
     background-color: transparent;
     /* background-color: #f8f8f8; */
@@ -36,9 +41,10 @@ body{
     width: 80%;
     height: 100%;
 }
+
 /* CONTENEDOR GRIS */
 
-.header{
+.header {
     font-size: 30px;
 }
 
@@ -49,6 +55,7 @@ body{
     margin-top: 65px;
 
 }
+
 /* CARD */
 
 /* BARRA DE PROGRESO*/
@@ -104,6 +111,7 @@ body{
     margin: 0;
     color: blue;
 }
+
 /* BARRA DE PROGRESO*/
 /* FORMULARIO */
 .form {
@@ -111,16 +119,9 @@ body{
 }
 
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
     border: transparent;
     background: transparent;
-}
-
-.form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .form-control input {
@@ -133,48 +134,6 @@ body{
     width: 100%;
 }
 
-.form-control input:focus {
-    outline: 0;
-    border-color: #777;
-}
-
-.form-control.success input {
-    border-color: #2ecc71;
-}
-
-.form-control.error input {
-    border-color: #e74c3c;
-}
-
-.form-control i {
-    visibility: hidden;
-    position: absolute;
-    top: 40px;
-    right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-}
-
-.form-control small {
-    color: #e74c3c;
-    position: absolute;
-    bottom: 10;
-    left: 6;
-    visibility: hidden;
-}
-
-.form-control.error small {
-    visibility: visible;
-}
-
 .form button {
     background-color: transparent;
     border: transparent;
@@ -182,15 +141,71 @@ body{
     color: black;
     display: block;
     font-size: 16px;
-    padding: 10px; 
+    padding: 10px;
     margin-top: 20px;
     width: 100%;
 }
+
+.formularioMensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.formMensajeExito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+
+}
+
+.formMensajeExitoActivo {
+    display: block;
+}
+
 /* FORMULARIO */
+.formLabel {
+    display: block;
+    cursor: pointer;
+}
+
+.formInputError {
+    font-size: 14px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formInputErrorActivo {
+    display: block;
+}
+
+/* FORMULARIO VALIDACION */
+.formGroupCorrecto .formValE {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formGroupIncorrecto .formLabel {
+    color: #bb2929;
+}
+
+.formGroupIncorrecto .formValE {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formGroupIncorrecto .formularioInputt {
+    border: 3px solid #bb2929;
+}
+
+/* FORMULARIO VALIDACION */
 
 /* RESUMEN DEL PEDIDO */
 
-#imgFlower{
+#imgFlower {
     width: 60%;
     border-radius: 10px;
 }
@@ -223,14 +238,16 @@ body{
     width: 22px;
     background-color: #E2E8F0;
 }
+
 /* BOTON MAX Y MINUS */
 
-#bold{
-font-weight: bold;
+#bold {
+    font-weight: bold;
 }
 
-#gratis{
-color: #2ecc71;
-font-weight: bold;
+#gratis {
+    color: #2ecc71;
+    font-weight: bold;
 }
+
 /* RESUMEN DEL PEDIDO */
