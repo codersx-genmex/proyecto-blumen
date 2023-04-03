@@ -6,6 +6,10 @@ body{
     background-color: white;
 }
 
+.col-md-4 {
+    margin-left: 85px;
+}
+
 #conteiner{
     margin-top: 85px;
 }
@@ -111,16 +115,9 @@ body{
 }
 
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
     border: transparent;
     background: transparent;
-}
-
-.form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .form-control input {
@@ -131,48 +128,6 @@ body{
     font-size: 14px;
     padding: 10px;
     width: 100%;
-}
-
-.form-control input:focus {
-    outline: 0;
-    border-color: #777;
-}
-
-.form-control.success input {
-    border-color: #2ecc71;
-}
-
-.form-control.error input {
-    border-color: #e74c3c;
-}
-
-.form-control i {
-    visibility: hidden;
-    position: absolute;
-    top: 40px;
-    right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-}
-
-.form-control small {
-    color: #e74c3c;
-    position: absolute;
-    bottom: 10;
-    left: 6;
-    visibility: hidden;
-}
-
-.form-control.error small {
-    visibility: visible;
 }
 
 .form button {
@@ -186,7 +141,60 @@ body{
     margin-top: 20px;
     width: 100%;
 }
+
+.formularioMensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.formMensajeExito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+    
+}
+
+.formMensajeExitoActivo {
+    display: block;
+}
 /* FORMULARIO */
+.formLabel {
+    display: block;
+    cursor: pointer;
+}
+.formInputError {
+    font-size: 14px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formInputErrorActivo{
+    display: block;
+}
+
+/* FORMULARIO VALIDACION */
+.formGroupCorrecto .formValE {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formGroupIncorrecto .formLabel{
+    color: #bb2929;
+}
+
+.formGroupIncorrecto .formValE {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formGroupIncorrecto .formularioInputt {
+    border: 3px solid #bb2929;
+}
+/* FORMULARIO VALIDACION */
 
 /* RESUMEN DEL PEDIDO */
 
@@ -234,3 +242,4 @@ color: #2ecc71;
 font-weight: bold;
 }
 /* RESUMEN DEL PEDIDO */
+
