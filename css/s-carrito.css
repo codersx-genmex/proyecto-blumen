@@ -4,7 +4,7 @@
     background-color: #ffb6d4;
     color: rgb(0, 0, 0);
     height: 30px;
-    width: 120px;
+    width: 160px;
 }
 
 #blanco {
@@ -15,6 +15,11 @@
 
 h6 {
     font-size: large;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /*Termina css contenido*/

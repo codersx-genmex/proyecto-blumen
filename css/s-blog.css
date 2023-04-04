@@ -2,6 +2,11 @@ body{
 	font-family: 'Montserrat';
 }
 
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
 .bg-w {
 	background-color: white;
 }
