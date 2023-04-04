@@ -35,16 +35,13 @@
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Navbar brand -->
-                    <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                    <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
                         <img src="../img/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
                     </a>
                     <!-- Left links -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Carrito.html">PRODUCTOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./acercaDe.html">SOBRE NOSOTROS</a>
@@ -63,26 +60,25 @@
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon -->
-                    <a class="text-reset me-3" href="#">
+                    <a class="text-reset me-3" href="./Carrito.html">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                     <!-- Avatar -->
                     <div class="dropdown">
-                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" id="navbarDropdownMenuAvatar"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="true">
                             <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
-                                height="25" alt="Black and White Portrait of a Man" />
+                                height="25" alt="Black and White Portrait of a Man" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
                             <li>
-                                <a class="dropdown-item" href="#">My profile</a>
+                                <a class="dropdown-item" href="./formCuentaValid.html">Checkout</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Settings</a>
+                                <a class="dropdown-item" href="./formEnvio.html">Direcciones</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Logout</a>
+                                <a class="dropdown-item" href="../index.html">Logout</a>
                             </li>
                         </ul>
                     </div>
@@ -159,7 +155,14 @@
                         <button type="submit">Aceptar</button>
                         <p class="formMensajeExito" id="formMensajeExito"></i>Formulario enviado.</p>
                     </div>
-                    <button>Cancelar</button>
+                    <div class="row justify-content-center">
+                        <div class="col-3">
+                            <button><a href="./formCuentaValid.html">Atrás</a></button>
+                        </div>
+                        <div class="col-4">
+                            <button><a href="./formEnvio.html">Siguiente</a></button>
+                        </div>
+                    </div>
                 </form>
                 <!-- TERMINA FORM-->
             </div>
@@ -226,6 +229,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
 <script src="../js/validEnvio.js"></script>
 
 </html>

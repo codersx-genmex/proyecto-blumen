@@ -143,21 +143,20 @@ hr {
     margin-right: auto;
 }
 
-
-#footerCont {
+.containerp {
 	width: 100%;
 	overflow: hidden;
-	/* padding-bottom: 2%; */
 }
 
 
 .text-left {
     float: left;
-
+    margin-left: 5%;
 }
 
 .text-right {
     float: right;
+    margin-right: 5%;
 }
 
 /* FOOTERS */
