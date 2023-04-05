@@ -51,7 +51,7 @@ function addItems( div_Productos ) {
 				Array.from(json).forEach((p) => {
 					//Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
 					div_Productos.innerHTML += `
-                    <div class="card" style="background-image: url('/img/Prod/${p.imagen}');" data-content="${p.nombreRamo} $${p.precio}"></div>
+                    <div class="card" style="background-image: url('../img/Prod/${p.imagen}');" data-content="${p.nombreRamo} $${p.precio}"></div>
                 `;
 				}); // foreach para agregar los productos al div del HTML
 			}); //then
