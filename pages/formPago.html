@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="image/png" rel="icon" href="../img/cherry-blossom.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagoValid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/formsStyles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-w fixed-top">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                        <img src="../img/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Carrito.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acercaDe.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ContactoM.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="25" alt="Black and White Portrait of a Man" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!-- Header -->
+    <div class="row justify-content-center" id="conteiner">
+        <div class="col-md-6">
+            <!-- INICIA FORM VALIDATION-->
+            <div class="container d-flex flex-column mt-2">
+                <!-- BARRA DE PROGRESO PAGO -->
+                <div class="progress-bar mt-4">
+                    <div class="progress"></div>
+                    <div class="upper">
+                        <span><i class="fa fa-check-circle-o"></i> Cuenta</span>
+                        <span><i class="fa fa-check-circle-o"></i> Envío</span>
+                        <span id="payment"><span id="three">3</span>Pago</span>
+                    </div>
+                </div>
+                <!-- BARRA DE PROGRESO PAGO -->
+                <!-- FORM DETALLES DE PAGO-->
+                <span class="header">Detalles de pago</span>
+                <div>
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="visa1" />
+                    <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" alt="visa2" />
+                    <img src="https://img.icons8.com/color/48/000000/maestro.png" alt="visa3" />
+                </div>
+                <!-- FORM DETALLES DE PAGO-->
+                <!-- INICIA FORM -->
+                <form id="form" class="form">
+                    <div class="form-control">
+                        <label for="namePago">Propietario de la tarjeta</label>
+                        <input type="text" placeholder="Margot Robbie" id="namePago" />
+                    </div>
+                    <div class="form-control">
+                        <label for="cardNum">Número de tarjeta</label>
+                        <input type="text" placeholder="1234-4567-8912-3456" id="cardNum" />
+                    </div>
+                    <div class="form-control">
+                        <label for="dateExp">Expiración</label>
+                        <input type="text" placeholder="05/03" id="dateExp" />
+                    </div>
+                    <div class="form-control">
+                        <label for="cvc">CVC</label><i class="far fa-question-circle"></i>
+                        <input type="password" placeholder="***" id="cvc" />
+                    </div>
+                    <hr>
+                    <button>Aceptar</button>
+                    <button>Cancelar</button>
+                </form>
+                <!-- TERMINA FORM-->
+            </div>
+        </div>
+        <!-- TERMINA FORM VALIDATION-->
+        <!-- INICIA RESUMEN DEL PEDIDO -->
+        <div class="col-md-4">
+            <div class=" d-flex flex-column mt-4" id="container2">
+                <!--RESUMEN PRODUCTO BOTON CONTADOR-->
+                <span class="header mt-4">Resumen del pedido</span>
+                <img src="../img/na-visky-7Z6GDHwQCEg-unsplash.jpg" alt="navisky-unsplash" id="imgFlower">
+                <div class="row mt-2 justify-content-center">
+                    <div class="col-6 mt-2">
+                        <div>Ramo de San Valentín</div>
+                        <div><b>$ 745.00</b></div>
+                    </div>
+                    <!--BOTON CONTADOR-->
+                    <div class="col-4 mt-2">
+                        <button class=" buttonMinus">-</button>
+                        <span class="alignContador contadorProduct">1</span>
+                        <button class="buttonMax">+</button>
+                    </div>
+                    <!-- TERMINA BOTON CONTADOR-->
+                </div>
+                <!--RESUMEN PRODUCTO BOTON CONTADOR-->
+                <!-- APLICAR -->
+                <div class="mt-2">Tarjeta de regalo / Código de descuento</div>
+                <div class="row">
+                    <div class="col-6">
+                        <input id="discountInput" placeholder="BWMQTR987">
+                    </div>
+                    <div class="col-4">
+                        <button id="discountButton">Aplicar</button>
+                    </div>
+                </div>
+                <!-- APLICAR -->
+                <!-- ROWS -->
+                <div class="mt-4">
+                    <div class="row lower">
+                        <div class="col text-left">Subtotal</div>
+                        <div class="col text-right">$ 745.00</div>
+                    </div>
+                    <div class="row lower">
+                        <div class="col text-left">IVA</div>
+                        <div class="col text-right">$5.45</div>
+                    </div>
+                    <div class="row lower">
+                        <div class="col text-left">Envío</div>
+                        <div class="col text-right" id="gratis">Gratis</div>
+                    </div>
+                    <div class="row lower">
+                        <div class="col text-left" id="bold">Total</div>
+                        <div class="col text-right" id="bold">$ 750.45</div>
+                    </div>
+                </div>
+                <!-- ROWS -->
+            </div>
+        </div>
+        <!-- TERMINA RESUMEN DEL PEDIDO -->
+    </div>
+</body>
+
+<!--SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="../js/formValidPago.js"></script>
+
+</html>

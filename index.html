@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="image/png" rel="icon" href="https://www.flaticon.com/free-icons/flower" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-w fixed-top">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                        <img src="./img/logo-completo.png" height="45px" alt="BLUMEN Logo" loading="lazy" />
+                    </a>
+                    <!-- Right links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercaDe.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/ContactoM.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                    <!-- Right links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon carrito-->
+                    <a class="text-reset me-3" href="./pages/Carrito.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" id="navbarDropdownMenuAvatar"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="true">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="./pages/formCuentaValid.html">Checkout</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./pages/formEnvio.html">Direcciones</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./index.html">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Carousel_2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Arreglos de graduación</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Carousel_1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Arreglos ejecutivos</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Carousel_3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Arreglos para la ocasión</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Banner -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="img-fluid text-center p-5" style="background-color: #FFEFEF;">
+                    <div>
+                        <h2 class="text-start">MAS QUE UN OBSEQUIO, UN LENGUAJE...</h2>
+                        <p class="text-start">Arreglos florales para toda la ocasión. Cumpleaños, aniversarios, eventos
+                            ejecutivos, eventos de agradecimientos y graduaciones escolares. Tenemos todos los arreglos
+                            florales para tu evento favorito.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lo mas pedido  -->
+    <div class="d-flex justify-content-center p-5">
+        <div class="row ">
+            <div class="col-12 mx-auto">
+                <h3 class="text-center">LOS MAS PEDIDOS</h3>
+                <p class="text-center">Estos son los favoritos de nuestros clientes.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Cards  -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div style="width: 18rem;">
+                    <div class="containerr">
+                        <img src="./img/Graduacion.png" alt="SanValentin" class="image">
+                        <div class="overlay">
+                            <div class="text">Graduaciones</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-2">
+                <div style="width: 18rem;">
+                    <div class="containerr">
+                        <img src="./img/SanValentin.jpg" alt="SanValentin" class="image">
+                        <div class="overlay">
+                            <div class="text">San Valentin</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-2">
+                <div style="width: 18rem;">
+                    <div class="containerr">
+                        <img src="./img/cumpleaños.jpg" alt="SanValentin" class="image">
+                        <div class="overlay">
+                            <div class="text">Cumpleaños</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ALGUNOS DE LOS PRODUCTOS -->
+    <div class="d-flex justify-content-center pt-5">
+        <div class="row ">
+            <div class="col-12 mx-auto">
+                <h3 class="text-center">ALGUNOS DE LOS PRODUCTOS</h3>
+            </div>
+        </div>
+    </div>
+    <!-- ALGUNOS DE LOS PRODUCTOS CARDS -->
+    <div class="container mt-5 ps-5 pe-5">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="roulette">
+                    <img src="./img/Prod/ramoRosas.jpg" alt="">
+                    <img src="./img/Prod/Florero_prod.jpg" alt="">
+                    <img src="./img/Prod/ramoGirasoles.jpg" alt="">
+                    <img src="./img/Prod/ramoRosasBlancas.jpg" alt="">
+                    <img src="./img/Prod/ramoRosasRojas.jpg" alt="">
+                    <img src="./img/Prod/Arreglo_prod2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Arreglos personalizados -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="img-fluid text-center p-5" style="background-color: #FFEFEF;">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="./img/Arrp/Arrp1.png" alt="" style="flex-grow: 2; width: 25%;">
+                        <a href="" style="flex-grow: 3; text-decoration: none; color: #000; font-size: 30px;">Arreglos
+                            personalizados</a>
+                        <img src="./img/Arrp/Arrp2.png" alt="" style="flex-grow: 2; width: 25%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categorias Text-->
+    <div class="d-flex justify-content-center pt-5">
+        <div class="row ">
+            <div class="col-12 mx-auto">
+                <h3 class="text-center">CATEGORIAS</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Categorias -->
+    <div class="container mt-5">
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col mt-2" style="min-width: 350px;">
+                <div class="img-fluid text-center p-5" style="background-color: #FFEFEF; height: 100%;">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="./img/Categories/image_mamas.png" alt="" style="flex-grow: 2; width: 25%;">
+                        <a href="" style="flex-grow: 3; text-decoration: none; color: #000; font-size: 30px;">Para la
+                            mama</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2">
+                <div class="img-fluid text-center p-5" style="background-color: #FFEFEF; height: 100%;">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <a href="./pages/productos.html"
+                            style="flex-grow: 1; text-decoration: none; color: #000; font-size: 30px;">Amistad</a>
+                        <img src="./img/Categories/image_amistad.png" alt="" style="flex-grow: 5; width: 25%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <div class="col mt-2" style="min-width: 250px;">
+                <div class="img-fluid text-center"
+                    style="background-color: #FFEFEF; padding: 5px 0 0 0; height: 100%; display: flex; align-items: end;">
+                    <div style="display: flex; flex-direction: column; width: 100%;">
+                        <a href=""
+                            style=" text-decoration: none; color: #000; font-size: 30px; padding-top: 10px;">Chocolates</a>
+                        <img src="./img/Categories/image_choco.png" alt="" class="choco">
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2" style="min-width: 350px;">
+                <div class="img-fluid text-center" style="background-color: #FFEFEF; padding: 5px 0 0 0; height: 100%;">
+                    <div style="display: flex; flex-direction: column; width: 100%; justify-content: center;">
+                        <a href="" style=" text-decoration: none; color: #000; font-size: 30px; ">Ellos</a>
+                        <img src="./img/Categories/image_paraEllos.png" alt="" class="ellos">
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-2" style="min-width: 350px;">
+                <div class="img-fluid text-center" style="background-color: #FFEFEF; padding: 5px 0 0 0; height: 100%;">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <a href="" style="flex-grow: 3; text-decoration: none; color: #000; font-size: 30px;">Una
+                            flor</a>
+                        <img src="./img/Categories/image_unaSola.png" alt="" style="flex-grow: 2; width: 40%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categorias -->
+
+    <!-- NEWSLETTER OFICIAL -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="img-fluid text-center p-5 sakura d-flex">
+                    <div class="hprom">
+                        <h3>SUSCRIBETE</h3>
+                        <p>Lee nuestras historias y recibe un cupón de 10% en tu próxima compra, así como las
+                            últimas
+                            novedades de nuestro catálogo.</p>
+                    </div>
+                    <div class="inpprom d-flex flex-column">
+                        <input type="text" placeholder="Correo electrónico">
+                        <button>Aqui</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NEWSLETTER OFICIAL -->
+    <!-- Footer -->
+    <footer class="bg text-center text-lg-start text-muted">
+        <!--Quitamos primero propiedad bg-light y utilizamos inline-style style="background-color: #F8E8E6;"-->
+        <!-- Section: Links  -->
+        <section class="d-flex justify-content-center">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            BLUMEN
+                        </h6>
+                        <p>
+                            Siguenos en nuestras redes sociales.
+                        </p>
+                        <div>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Información
+                        </h6>
+                        <p>
+                            <a href="./pages/acercaDe.html" class="text-reset">Acerca de</a>
+                        </p>
+                        <p>
+                            <a href="./pages/paginaDeError.html" class="text-reset">Términos y condiciones</a>
+                        </p>
+                        <p>
+                            <a href="./pages/paginaDeError.html" class="text-reset">Aviso de privacidad</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Enlaces
+                        </h6>
+                        <p>
+                            <a href="./pages/wishlistVacia.html" class="text-reset">Lista de deseos</a>
+                        </p>
+                        <p>
+                            <a href="./pages/Carrito.html" class="text-reset">Carrito de compras</a>
+                        </p>
+                        <p>
+                            <a href="./pages/formCuentaValid.html" class="text-reset">Checkout</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contáctanos</h6>
+                        <p><i class="fab fa-whatsapp me-3"></i> + 01 234 567 88</p>
+                        <i class="fas fa-envelope me-3"></i>
+                        staff@blumen.com
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <hr>
+        <div class="container">
+            <div class=" text-left">Copyright © 2023 <div>BLUMEN</div>
+            </div>
+            <div class="text-right">Todos los derechos reservados</div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>
